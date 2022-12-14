@@ -1,0 +1,25 @@
+# Visit https://docs.rilldata.com/ to learn more about Rill code artifacts.
+
+display_name: "electronics_purchase_history_model_dashboard"
+model: "electronics_purchase_history_model"
+timeseries: "timestamp"
+measures:
+  - label: Total records
+    expression: count(*)
+    description: Total number of records present
+    format_preset: humanize
+  - label: "Revenue"
+    expression: "sum(price)"
+    description: ""
+    format_preset: humanize
+  - label: "ARPU"
+    expression: "sum(price)/count(distinct user_id)"
+    description: ""
+    format_preset: currency_usd
+dimensions:
+  - label: Category_code
+    property: category_code
+    description: ""
+  - label: Brand
+    property: brand
+    description: ""
