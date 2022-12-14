@@ -4,7 +4,7 @@ display_name: "electronics_purchase_history_model_dashboard"
 model: "electronics_purchase_history_model"
 timeseries: "timestamp"
 measures:
-  - label: Total records
+  - label: Total Transactions
     expression: count(*)
     description: Total number of records present
     format_preset: humanize
