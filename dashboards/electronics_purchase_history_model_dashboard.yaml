@@ -6,7 +6,7 @@ timeseries: "timestamp"
 measures:
   - label: Total Transactions
     expression: count(*)
-    description: Total number of records present
+    description: Total number of transactions on the marketplace
     format_preset: humanize
   - label: "Revenue"
     expression: "sum(price)"
